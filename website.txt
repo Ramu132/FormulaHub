@@ -1,0 +1,4 @@
+1)We will add dark theme and lght theme using javascript
+(Will only change the body color dark or light White) 
+Nothing more
+

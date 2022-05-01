@@ -9,14 +9,15 @@
     <style>
         * {
 
-            margin: 0px;
+            margin: 1px;
             padding: 0px;
         }
 
         body {
 
             /* background-color: rgb(37, 34, 34); */
-            background-color: #4e71bd;
+            /* background-color: #4e71bd; */
+            background-color: #264653;
             color: rgb(255, 255, 255);
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
@@ -24,7 +25,7 @@
         .title {
             padding-top: .2rem;
             padding-bottom: .4rem;
-            background-color: black;
+            /* background-color: black; */
             display: flex;
             flex-direction: row;
             align-items: center;
@@ -43,33 +44,42 @@
         }
 
         .data-box {
-            border: 2px solid rgb(72, 59, 116);
-            background-color: black;
-            padding-top: 5rem;
-            padding-bottom: 5rem;
+            /* border: 2px solid rgb(72, 59, 116); */
+            /* background-color: black; */
+            background-color: #2a9d8f;
+            /* padding-top: 5rem;
+            padding-bottom: 5rem; */
             height: 15rem;
             display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
+            width: auto;margin: auto;
+            justify-content:center;
+            align-items:center;
+            flex-direction: row;
+            flex-wrap: wrap;
         }
 
         .data-box a:hover {
-            background-color: #2d4b9e;
+            /* background-color: #2d4b9e; */
+            /* background-color: #2a9d8f; */
             
-            border: 1px solid rgb(31, 128, 255); 
+            /* border: 1px solid rgb(31, 128, 255);  */
             cursor: pointer;
-            box-shadow: inset 200px 0 0 0 0 yellow;
-            box-shadow: 2px 2px 11px rgb(171, 194, 236);
-
+           
+            /* box-shadow: 2px 2px 11px rgb(171, 194, 236); */
+            transform: scale(1.1);
+            transition: .4s;
         }
 
         .data-box a {
-            border: 1px solid #4e71bd;
+            width: auto;
+           
+            background-color:#e76f51;
+            /* border: 1px solid #4e71bd; */
             margin-bottom: 1.2rem;
             padding: 5px;
-            border-radius: 16px;
-            box-shadow: 2px 2px 2px rgb(56, 97, 145);
+            margin-left: 15px;
+            border-radius: 6px;
+            /* box-shadow: 2px 2px 2px rgb(56, 97, 145); */
         }
 
         .data-box a {
@@ -83,7 +93,7 @@
         }
 
         .lecture-box {
-            border: 2px solid green;
+            /* border: 2px solid green; */
             /* margin-top: 8rem; */
             padding-bottom: 5.7rem;
             height: 14rem;
@@ -91,7 +101,8 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: rgb(0, 0, 0);
+            background-color: #264653;
+            /* background-color: rgb(0, 0, 0); */
         }
 
         #quoto {
@@ -99,7 +110,7 @@
         }
 
         .conclusion {
-            border: 1px solid rgb(126, 28, 77);
+            /* border: 1px solid rgb(126, 28, 77); */
         }
     </style>
 </head>
@@ -114,16 +125,16 @@
         <div class="data-box">
            
             <a href="tri.html">
-                <h2 id="tri-f">Trigonometry Formula</h2>
+                <h2 id="tri-f">Trigonometry</h2>
             </a>
             <a href="calculas.html">
-                <h2 id="calc-f">Calculas Formula</h2>
+                <h2 id="calc-f">Calculas</h2>
             </a>
             <a href="">
-                <h2 id="calc-r">Calculas Rules</h2>
+                <h2 id="calc-r">CalculasR</h2>
             </a>
             <a href="triRule.html">
-                <h2 id="tri-r">Tigonometry Rules</h2>
+                <h2 id="tri-r">TigonometryR</h2>
             </a>
         </div>
         <div class="lecture-box">

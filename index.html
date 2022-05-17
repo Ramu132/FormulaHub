@@ -18,7 +18,8 @@
             /* background-color: rgb(37, 34, 34); */
             /* background-color: #4e71bd; */
             /* background-color: #264653; */
-            background-color: #ff006e;
+            /* background-color: #ff006e; */
+            background-color: #6f74b7;
             color: rgb(255, 255, 255);
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
@@ -26,9 +27,12 @@
         .title {
             padding-top: .2rem;
             padding-bottom: .4rem;
-            /* background-color: black; */
+            background-color: rgb(233, 105, 105);
             text-align: center;
             margin: auto;
+            top: 0px;
+            
+            position:sticky;
             /* display: flex;
             flex-direction: row;
             align-items: center;
@@ -54,14 +58,17 @@
         .data-box {
             /* border: 2px solid rgb(72, 59, 116); */
             /* background-color: black; */
-            background-color: #ffbe0b;
+            /* background-color: #ffbe0b; */
+            background-color: #eadcb6;
             /* padding-top: 5rem;
             padding-bottom: 5rem; */
-            height: 15rem;
+            
             display: flex;
-            width: auto;
-            height: 20rem;
+            max-width: 100%;
+            width: 70vw;
+            height: 27rem;
             margin: auto;
+            margin-top: 4rem;
             justify-content:center;
             align-items:center;
             flex-direction: column;
@@ -73,11 +80,12 @@
             /* background-color: #2a9d8f; */
             /* border: 1px solid rgb(31, 128, 255);  */
             cursor: pointer;
-           
-            /* box-shadow: 2px 2px 11px rgb(171, 194, 236); */
-            transform: scale(1.01);
-            transition: .4s;
-            box-shadow: 2px 2px 13px blue;
+            /* background-color: aliceblue;
+            color: #191a22; */
+            box-shadow: 2px 2px 11px rgb(212, 220, 236);
+            /* transform: scale(1.01); */
+            transition: .6s;
+            
         }
 
         .data-box a {
@@ -88,14 +96,19 @@
             padding:10px 5px;
             margin-left: 15px;
             border-radius: 6px;
+            
             /* box-shadow: 2px 2px 2px rgb(56, 97, 145); */
         }
 
         .data-box a {
             text-decoration: none;
             color: rgb(255, 255, 255);
+            
         }
-
+        .data-box a h2{
+            font-weight: 300;
+            text-shadow: 2px 2px 10px #191a22;
+        }
         h3,
         h4 {
             text-align: center;
@@ -105,55 +118,64 @@
             /* border: 2px solid green; */
             /* margin-top: 8rem; */
             padding-bottom: 5.7rem;
-            height: 14rem;
+            height: 1rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            background-color: #8338ec;
+            margin-top: 25vh;
+            /* background-color: #8338ec; */
+            background-color: #967cbd;
+            font-weight: lighter;
+          
             /* background-color: rgb(0, 0, 0); */
         }
-
-        #quoto {
-            margin-bottom: .6rem;
+        .lecture-box h3{
+            font-weight: 300;
+            text-shadow: 2px 2px 10px #191a22;
         }
-
-        .conclusion {
-            /* border: 1px solid rgb(126, 28, 77); */
+        button{
+           position: absolute;
+           right: 15vw;
+            width: 80px;
+            padding: 10px 25px;
+            background-color: #191a22;
+            color: aliceblue;
+            border: none;
         }
-        .lecture-box h1{
-            margin-bottom: 3rem;
+        button:hover{
+            cursor: pointer;
         }
     </style>
 </head>
 
-<body>
+<body id="body">
     <div class="container">
 
-        <div class="title">
+        <div class="title" id="nav">
            <h1>Learning Hub</h1>
         </div>
-        <div class="data-box">
+        <div class="data-box" id="data">
            
-            <a href="tri.html">
+            <a id="a1" href="tri.html">
                 <h2 id="tri-f">Trigonometry</h2>
             </a>
-            <a href="calculas.html">
+            <a id="a2" href="calculas.html">
                 <h2 id="calc-f">Calculas</h2>
             </a>
-            <a href="">
+            <a id="a3" href="">
                 <h2 id="calc-r">CalculasR</h2>
             </a>
-            <a href="triRule.html">
+            <a id="a4" href="triRule.html">
                 <h2 id="tri-r">TigonometryR</h2>
             </a>
         </div>
-        <!-- About me section  -->
-        <div class="lecture-box">
 
-                <h1>About Me</h1>
-                <h3>"The inspiration from something worst has</h3>
-                <h3 id="quoto">changed into somehing better"</h3>
+            <button type="button" onclick="dark()">Dark</button>
+
+        <!-- About me section  -->
+        <div class="lecture-box" id="end">
+        
                 <h3>"Yet a lot more to come.</h3>
                 <h3> Stay tuned , stay connected."</h3> 
         </div>
@@ -163,6 +185,30 @@
 
     </div>
     </div>
+
+    <script>
+        function dark() {
+            let x=document.getElementById("body");
+            x.style.background="rgb(0,0,0)";
+            let y=document.getElementById("nav");
+            y.style.background="#7a7a7a";
+            let z=document.getElementById("data");
+            z.style.background="#343434";
+
+            let a=document.getElementById("a1")
+            a.style.background="#111111"
+            let b=document.getElementById("a2")
+            b.style.background="#111111"
+            let c=document.getElementById("a3")
+            c.style.background="#111111"
+            let d=document.getElementById("a4")
+            d.style.background="#111111"
+
+            let e=document.getElementById("end")
+            e.style.background="#232323"
+        }
+    </script>
+
 </body>
 
 </html>

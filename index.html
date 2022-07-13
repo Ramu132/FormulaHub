@@ -15,11 +15,12 @@
 
         body {
 
-            /* background-color: rgb(37, 34, 34); */
-            /* background-color: #4e71bd; */
-            /* background-color: #264653; */
-            /* background-color: #ff006e; */
-            background-color: #6f74b7;
+
+            background: url(pexels-lisa-4061112.jpg);
+            background-repeat: no-repeat;
+            /* background-size: 100% 80%; */
+            background-size: cover cover ;
+            background-position: center;
             color: rgb(255, 255, 255);
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         }
@@ -27,20 +28,32 @@
         .title {
             padding-top: .2rem;
             padding-bottom: .4rem;
-            background-color: rgb(233, 105, 105);
+            background-color: rgb(29, 29, 40);
+
             text-align: center;
             margin: auto;
-            top: 0px;
-            
-            position:sticky;
-            /* display: flex;
-            flex-direction: row;
-            align-items: center;
-            justify-content: center; */
+            top: 1px;
+
+            position: sticky;
+          
         }
-        h1{
+        .quoto{
+            position: absolute;
+            top: 15rem;
+            left: 2rem;
+            width: 5rem;
+            font-size: 3rem;
+            text-align: left;
+            font-family: cursive;
+            z-index: -1;
+            color: #000000;
+            text-shadow: 2px 2px 12px rgb(218, 204, 204);
+          
+        }
+        h1 {
             display: inline;
         }
+
         #hub {
             /* background-color: rgb(235, 104, 44); */
             /* background-color: rgb(14, 157, 77); */
@@ -52,63 +65,67 @@
         h2,
         p {
             text-align: center;
-            
+
+        }
+
+        .m-data {
+            display: flex;
+            justify-content: right;
         }
 
         .data-box {
-            /* border: 2px solid rgb(72, 59, 116); */
-            /* background-color: black; */
-            /* background-color: #ffbe0b; */
-            background-color: #eadcb6;
-            /* padding-top: 5rem;
-            padding-bottom: 5rem; */
-            
+
+            background-color: rgba(0, 0, 0, 0.5);
+           
             display: flex;
-            max-width: 100%;
-            width: 70vw;
-            height: 27rem;
-            margin: auto;
+
+            max-width: 40vw;
+            height: fit-content;
+
             margin-top: 4rem;
-            justify-content:center;
-            align-items:center;
-            flex-direction: column;
+            padding: 1rem 2rem;
+            justify-content: center;
+            align-items: center;
             flex-wrap: wrap;
         }
 
         .data-box a:hover {
-            /* background-color: #2d4b9e; */
-            /* background-color: #2a9d8f; */
-            /* border: 1px solid rgb(31, 128, 255);  */
+
             cursor: pointer;
-            /* background-color: aliceblue;
-            color: #191a22; */
-            box-shadow: 2px 2px 11px rgb(212, 220, 236);
-            /* transform: scale(1.01); */
+
+            box-shadow: 2px 2px 11px rgb(59, 55, 55);
+            background-color: whitesmoke;
+            color: black;
             transition: .6s;
-            
+
         }
 
         .data-box a {
-            width:11rem;
-            box-shadow: 1px 1px 13px rgb(63, 103, 150);
-            background-color:#3a86ff;
-            margin-bottom: 1.2rem;
-            padding:10px 5px;
-            margin-left: 15px;
+            width: 11rem;
+            height: 11rem;
+            /* box-shadow: 1px 1px 13px rgb(63, 103, 150); */
+            background-color: #19191a;
+            margin: 2rem 1rem;
+            padding: 10px 5px;
+
             border-radius: 6px;
-            
+            display: flex;
+            justify-content: center;
+            align-items: center;
             /* box-shadow: 2px 2px 2px rgb(56, 97, 145); */
         }
 
         .data-box a {
             text-decoration: none;
             color: rgb(255, 255, 255);
-            
+
         }
-        .data-box a h2{
+
+        .data-box a h2 {
             font-weight: 300;
-            text-shadow: 2px 2px 10px #191a22;
+
         }
+
         h3,
         h4 {
             text-align: center;
@@ -124,60 +141,66 @@
             justify-content: center;
             align-items: center;
             margin-top: 25vh;
+           
             /* background-color: #8338ec; */
-            background-color: #967cbd;
+            background-color: #632b91;
             font-weight: lighter;
-          
+
             /* background-color: rgb(0, 0, 0); */
         }
-        .lecture-box h3{
+
+        .lecture-box h3 {
             font-weight: 300;
-            text-shadow: 2px 2px 10px #191a22;
+            color: #ffffff;
+            text-shadow: 2px 2px 10px #0b0b0e;
         }
-        button{
-           position: absolute;
-           right: 15vw;
-            width: 80px;
-            padding: 10px 25px;
-            background-color: #191a22;
-            color: aliceblue;
-            border: none;
-        }
-        button:hover{
-            cursor: pointer;
-        }
+
+        
     </style>
 </head>
 
 <body id="body">
     <div class="container">
+       
+
 
         <div class="title" id="nav">
-           <h1>Learning Hub</h1>
-        </div>
-        <div class="data-box" id="data">
-           
-            <a id="a1" href="tri.html">
-                <h2 id="tri-f">Trigonometry</h2>
-            </a>
-            <a id="a2" href="calculas.html">
-                <h2 id="calc-f">Calculas</h2>
-            </a>
-            <a id="a3" href="">
-                <h2 id="calc-r">CalculasR</h2>
-            </a>
-            <a id="a4" href="triRule.html">
-                <h2 id="tri-r">TigonometryR</h2>
-            </a>
+            <h1 class="dark">Learning Hub</h1>
         </div>
 
-            <button type="button" onclick="dark()">Dark</button>
+
+        <div class="quoto">
+            <h3>Flower blooms in every season</h3>
+        </div>
+
+
+        <div class="m-data">
+            <div class="data-box" id="data">
+
+                <a  id="a1" href="tri.html">
+                    <h2 id="tri-f">Trigonometry</h2>
+                </a>
+                <a id="a2" href="calculas.html">
+                    <h2 id="calc-f">Calculas</h2>
+                </a>
+                <a id="a3" href="">
+                    <h2 id="calc-r">CalculasR</h2>
+                </a>
+                <a id="a4" href="triRule.html">
+                    <h2 id="tri-r">TigonometryR</h2>
+                </a>
+            </div>
+
+        </div>
+
+
+      
 
         <!-- About me section  -->
-        <div class="lecture-box" id="end">
-        
-                <h3>"Yet a lot more to come.</h3>
-                <h3> Stay tuned , stay connected."</h3> 
+        <div class="lecture-box dark" id="end">
+
+            <h3>"Yet a lot more to come.</h3>
+            <h3> Stay tuned , stay connected."</h3>
         </div>
     </div>
     <div class="conclusion">
@@ -186,28 +209,7 @@
     </div>
     </div>
 
-    <script>
-        function dark() {
-            let x=document.getElementById("body");
-            x.style.background="rgb(0,0,0)";
-            let y=document.getElementById("nav");
-            y.style.background="#7a7a7a";
-            let z=document.getElementById("data");
-            z.style.background="#343434";
-
-            let a=document.getElementById("a1")
-            a.style.background="#111111"
-            let b=document.getElementById("a2")
-            b.style.background="#111111"
-            let c=document.getElementById("a3")
-            c.style.background="#111111"
-            let d=document.getElementById("a4")
-            d.style.background="#111111"
-
-            let e=document.getElementById("end")
-            e.style.background="#232323"
-        }
-    </script>
+    
 
 </body>
 
